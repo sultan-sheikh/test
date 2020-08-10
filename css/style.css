@@ -1,0 +1,90 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    background:#34495e;
+    font-size:16px;
+    box-sizing: border-box;
+    font-family: verdana;
+}
+
+.menu-bar{
+    text-align:center;
+    background: #e74c3c;
+}
+
+.menu-bar ul{
+    display:inline-flex;
+    list-style: none;
+    color:#fff;
+}
+
+.menu-bar ul li{
+    width:120px;
+    margin:15px;
+    padding:15px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.active, .menu-bar ul li:hover{
+    background:#e67e22;
+    border-radius: 3px;
+}
+
+.menu-bar .fa{
+    margin-right:8px;
+}
+
+.submenu-one{
+    display:none;
+}
+
+.menu-bar ul li:hover .submenu-one{
+    display:block;
+    position:absolute;
+    background:#e74c3c;
+    margin-top:15px;
+    margin-left:-15px;
+}
+
+.menu-bar ul li:hover .submenu-one ul{
+    display:block;
+    margin:10px;
+}
+
+.menu-bar ul li:hover .submenu-one ul li{
+    border-bottom:1px solid white;
+    background:transparent;
+    width:150px;
+    padding:10px;
+    text-align:left;
+}
+
+.menu-bar ul li:hover .submenu-one ul li:last-child{
+    border-bottom:none;
+}
+
+.menu-bar ul li:hover .submenu-one ul li a:hover{
+    color:#2c3e50;
+}
+
+.fa-angle-right{
+    float:right;
+}
+
+.submenu-two{
+    display:none;
+}
+
+.hover-me:hover .submenu-two{
+    display:block;
+    position:absolute;
+    margin-top:-40px;
+    margin-left:160px;
+    background:#e74c3c;
+}
